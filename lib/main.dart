@@ -13,22 +13,21 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a purple toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
-        //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
-        // restart instead.
-        //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      // これはあなたのアプリケーションのテーマです。 
+      //
+      //　試してみましょう: アプリケーションを"flutter run"で実行してみてください。 // 
+      //　アプリケーションのツールバーが紫色になっているのが確認できます。 // 
+      //　アプリを終了せずに、以下のcolorSchemeのseedColorをColors.greenに // 
+      //　変更して"ホットリロード"を実行してみてください //（Flutter対応のIDEで変更を保存するかホットリロードボタンを押すか、 // 
+      //　コマンドラインでアプリを起動した場合は"r"を押します）。 // 
+      //
+      //　カウンターがゼロにリセットされないことに注目してください。 // 
+      //　リロード中もアプリケーションの状態は失われません。 // 
+      //　状態をリセットするには、代わりにホットリスタートを使用します。 // 
+      // 
+      //　これはコードに対しても有効で、値だけではありません： // 
+      //　ほとんどのコード変更はホットリロードだけでテストできます。
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFFFFAA00)),
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
@@ -59,11 +58,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
+      // このsetState呼び出しは、Flutterフレームワークに対して
+      // このStateで何かが変更されたことを通知します。
+      // その結果、下記のbuildメソッドが再実行され、
+      // 画面に更新された値が反映されます。
+      // もしsetState()を呼ばずに_counterを変更した場合、
+      // buildメソッドは再度呼ばれることはなく、
+      // 結果として画面上の変化は見られません。
       _counter++;
     });
   }
