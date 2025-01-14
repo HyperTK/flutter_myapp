@@ -38,14 +38,12 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
+// このウィジェットはアプリケーションのホームページです。これはStatefulであり、
+//　見た目に影響を与えるフィールドを含むStateオブジェクト（以下で定義）を持っています。
 
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
+// このクラスは状態の設定を行います。親（この場合はAppウィジェット）から
+//　提供された値（この場合はタイトル）を保持し、Stateのbuildメソッドで使用されます。
+//　Widgetサブクラス内のフィールドは常に"final"としてマークされます。
 
   final String title;
 
